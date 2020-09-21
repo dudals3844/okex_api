@@ -2,7 +2,7 @@ package com.okex.api.const
 
 const val BASE_URL = "https://www.okex.com/"
 
-const val FUTURE_POSITIONS = "api/futures/v3/position"
+const val FUTURES_POSITIONS = "api/futures/v3/position"
 
 const val FUTURES_ACCOUNT_BASE_URL= "api/futures/v3/accounts"
 
