@@ -23,7 +23,6 @@ open class DateUtils{
     open fun timeTOString(): String{
         val cal  = Calendar.getInstance()
         cal.time = Date()
-        println(SDF.format(cal.time))
         return SDF.format(cal.time)
     }
 }

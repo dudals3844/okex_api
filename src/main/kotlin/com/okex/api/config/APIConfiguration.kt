@@ -14,7 +14,7 @@ open class APIConfiguration {
 
     var endpoint: String
 
-    var connectTimeout: String? = null
+    var connectTimeout: Int = 3
 
     var readTimeout: String? = null
 
@@ -23,6 +23,11 @@ open class APIConfiguration {
     var retryOnConnectionFailure: Boolean = true
 
     var print: Boolean = false
+
+
+    fun getConnectTimeout(): Int? {
+        return connectTimeout
+    }
 
 
 }

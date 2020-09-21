@@ -32,6 +32,8 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.9.0")
     implementation("com.googlecode.json-simple:json-simple:1.1.1")
     implementation("org.slf4j:slf4j-log4j12:1.8.0-beta2")
+    implementation("org.apache.commons:commons-lang3:3.6")
+    implementation("org.apache.commons:commons-text:1.6")
     implementation("ch.qos.logback:logback-classic:1.2.3")
     implementation("commons-logging:commons-logging:1.1.1")
     compileOnly("org.projectlombok:lombok")
