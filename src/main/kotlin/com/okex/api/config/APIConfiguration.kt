@@ -14,20 +14,16 @@ open class APIConfiguration {
 
     var endpoint: String
 
-    var connectTimeout: Int = 3
+    var connectTimeout: Long = 2
 
-    var readTimeout: String? = null
+    var readTimeout: Long = 2
 
-    var writeTimeout: String? = null
+    var writeTimeout: Long = 2
 
     var retryOnConnectionFailure: Boolean = true
 
     var print: Boolean = false
 
-
-    fun getConnectTimeout(): Int? {
-        return connectTimeout
-    }
 
 
 }

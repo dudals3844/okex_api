@@ -1,8 +1,10 @@
 package com.okex.api.utils
 
 import okhttp3.internal.UTC
+import java.lang.StringBuilder
 import java.text.DateFormat
 import java.text.SimpleDateFormat
+import java.time.Instant
 import java.util.*
 
 
@@ -24,5 +26,11 @@ open class DateUtils{
         val cal  = Calendar.getInstance()
         cal.time = Date()
         return SDF.format(cal.time)
+    }
+
+    open fun getUnixTime(): String{
+        var nowStr: StringBuilder = StringBuilder(Instant.now().toString())
+        return StringBuilder().append(nowStr.toString()).toString()
+
     }
 }
