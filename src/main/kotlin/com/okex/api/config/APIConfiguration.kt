@@ -1,5 +1,7 @@
 package com.okex.api.config
 
+import com.okex.api.enum.I18nEnum
+
 open class APIConfiguration {
 
     constructor(endpoint: String){
@@ -23,6 +25,8 @@ open class APIConfiguration {
     var retryOnConnectionFailure: Boolean = true
 
     var print: Boolean = false
+
+    var i18n: I18nEnum = I18nEnum.ENGLISH
 
 
 

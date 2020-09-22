@@ -6,11 +6,11 @@ open class APICredentials {
         this.secretKey = config.secretKey
         this.passphrase = config.passphrase
     }
-    private var apiKey: String? = null
+    var apiKey: String?
 
-    private var secretKey: String? = null
+    var secretKey: String?
 
-    private var passphrase: String? = null
+    var passphrase: String?
 
 
 
