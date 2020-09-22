@@ -18,10 +18,11 @@ import java.security.InvalidKeyException
 open class Sign{
 
     fun getSign(timestamp: String, method: String, requestPath: String, queryString: String, body: String, scretKey: String): String{
-        val sign: String
+        var sign: String
         val hmacSHA256Base64Utils = HmacSHA256Base64Utils()
         try {
             sign = hmacSHA256Base64Utils.sign(timestamp, method, requestPath, queryString, body, scretKey)
+            println(sign)
         } catch (e: IOException){
             throw APIException("Request get body io exception.", e)
         } catch (e: CloneNotSupportedException){

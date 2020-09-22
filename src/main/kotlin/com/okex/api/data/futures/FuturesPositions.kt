@@ -2,9 +2,14 @@ package com.okex.api.data.futures
 
 import lombok.Data
 
-
 @Data
 data class FuturesPositions(
+        var result: Boolean,
+        var holding: List<FuturesPositions>
+)
+
+@Data
+data class Data(
         val margin_mode: String,
         val liquidation_price: String,
         val long_qty: String,
@@ -31,3 +36,4 @@ data class FuturesPositions(
         val long_settled_pnl: String,
         val last: String
 )
+

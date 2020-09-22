@@ -8,6 +8,7 @@ enum class HttpHeadersEnum(val header: String) {
     OK_FROM("OK-FROM"),
     OK_TO("OK-TO"),
     OK_LIMIT("OK-LIMIT"),
-    x_simulated_trading("x-simulated-trading")
+    x_simulated_trading("x-simulated-trading"),
+    CONTENT_TYPE("Content-Type")
 }
 

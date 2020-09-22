@@ -16,8 +16,12 @@ open class RetrofitBuilder {
     }
 }
 
-open class RetrofitFutureService: RetrofitBuilder(){
-    override fun getRetrofitBuilder(): Retrofit? {
-        return super.getRetrofitBuilder()
+open class RetrofitFutures{
+    open fun getService(): Futures? {
+        var retrofitBuilder = RetrofitBuilder()
+        var retrofit = retrofitBuilder.getRetrofitBuilder()
+        var service = retrofit!!.create(Futures::class.java)
+        return service
     }
 }
+
