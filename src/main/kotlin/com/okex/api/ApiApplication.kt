@@ -1,5 +1,6 @@
 package com.okex.api
 
+import com.okex.api.client.Headers
 import com.okex.api.config.APIConfiguration
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

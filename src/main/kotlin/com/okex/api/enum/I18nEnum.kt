@@ -1,5 +1,5 @@
 package com.okex.api.enum
 
-enum class I18nEnum(i18n: String) {
+enum class I18nEnum(val i18n: String) {
     ENGLISH("en_US")
 }
